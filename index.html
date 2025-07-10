@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cloud Storage Interface</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link  href="CSS\Style.css" rel="stylesheet">
+</head>
+<body>
+    <div class="main-container">
+        <!-- Left Sidebar -->
+        <div class="sidebar">
+            <div class="profile-section">
+                <div class="profile-avatar">
+                    <i class="fas fa-user"></i>
+                </div>
+            </div>
+            
+            <nav>
+                <a href="#" class="nav-item">
+                    <i class="fas fa-cloud"></i>
+                    My cloud
+                </a>
+                <a href="#" class="nav-item">
+                    <i class="fas fa-users"></i>
+                    Shared files
+                </a>
+                <a href="#" class="nav-item">
+                    <i class="fas fa-star"></i>
+                    Favorites
+                </a>
+                <a href="#" class="nav-item">
+                    <i class="fas fa-upload"></i>
+                    Upload files
+                </a>
+            </nav>
+            
+            <div style="margin-top: auto; padding-top: 50px;">
+                <a href="#" class="nav-item">
+                    <i class="fas fa-cog"></i>
+                    Settings
+                </a>
+                <a href="#" class="nav-item">
+                    <i class="fas fa-sign-out-alt"></i>
+                    Log out
+                </a>
+            </div>
+        </div>
+        
+        <!-- Main Content -->
+        <div class="main-content">
+            <!-- Search Section -->
+            <div class="search-section">
+                <input type="text" class="search-input" placeholder="Search">
+            </div>
+            
+            <!-- Categories Section -->
+            <div class="categories-section">
+                <h4 class="mb-4" style="font-weight: 600; color: #333;">Categories</h4>
+                <div class="row g-4">
+                    <div class="col-md-3">
+                        <div class="category-card">
+                            <div class="category-icon pictures-icon">
+                                <i class="fas fa-image"></i>
+                            </div>
+                            <div class="category-title">Pictures</div>
+                            <div class="category-count">480 files</div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="category-card">
+                            <div class="category-icon documents-icon">
+                                <i class="fas fa-file-alt"></i>
+                            </div>
+                            <div class="category-title">Documents</div>
+                            <div class="category-count">150 files</div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="category-card">
+                            <div class="category-icon videos-icon">
+                                <i class="fas fa-play-circle"></i>
+                            </div>
+                            <div class="category-title">Videos</div>
+                            <div class="category-count">30 files</div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="category-card">
+                            <div class="category-icon audio-icon">
+                                <i class="fas fa-music"></i>
+                            </div>
+                            <div class="category-title">Audio</div>
+                            <div class="category-count">80 files</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Files Section -->
+            <div class="files-section">
+                <h4 class="mb-4" style="font-weight: 600; color: #333;">Files</h4>
+                <div class="files-grid">
+                    <div class="file-folder">
+                        <div class="folder-icon work-folder">
+                            <i class="fas fa-briefcase"></i>
+                        </div>
+                        <div class="category-title">Work</div>
+                        <div class="category-count">830 files</div>
+                    </div>
+                    <div class="file-folder">
+                        <div class="folder-icon personal-folder">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="category-title">Personal</div>
+                        <div class="category-count">115 files</div>
+                    </div>
+                    <div class="file-folder">
+                        <div class="folder-icon school-folder">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <div class="category-title">School</div>
+                        <div class="category-count">65 files</div>
+                    </div>
+                    <div class="file-folder">
+                        <div class="folder-icon archive-folder">
+                            <i class="fas fa-archive"></i>
+                        </div>
+                        <div class="category-title">Archive</div>
+                        <div class="category-count">21 files</div>
+                    </div>
+                    <div class="file-folder add-folder">
+                        <i class="fas fa-plus"></i>
+                    </div>
+                </div>
+            </div>
+            <!---   -->
+         <!-- Recent Files Section -->
+            <div class="recent-files-section">
+                <h4 class="mb-4" style="font-weight: 600; color: #333;">Recent files</h4>
+                
+                <div class="recent-files-list">
+                    <div class="recent-file-item">
+                        <div class="file-icon png-file">
+                            <i class="fas fa-image"></i>
+                        </div>
+                        <div class="file-info">
+                            <div class="file-name">IMG_100000</div>
+                            <div class="file-details">PNG file</div>
+                        </div>
+                        <div class="file-size">5 MB</div>
+                        <div class="file-actions">
+                            <button class="action-btn">
+                                <i class="fas fa-share-alt"></i>
+                            </button>
+                            <button class="action-btn">
+                                <i class="fas fa-ellipsis-h"></i>
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <div class="recent-file-item">
+                        <div class="file-icon avi-file">
+                            <i class="fas fa-play-circle"></i>
+                        </div>
+                        <div class="file-info">
+                            <div class="file-name">Startup pitch</div>
+                            <div class="file-details">AVI file</div>
+                        </div>
+                        <div class="file-size">105 MB</div>
+                        <div class="file-actions">
+                            <button class="action-btn">
+                                <i class="fas fa-share-alt"></i>
+                            </button>
+                            <button class="action-btn">
+                                <i class="fas fa-ellipsis-h"></i>
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <div class="recent-file-item">
+                        <div class="file-icon mp3-file">
+                            <i class="fas fa-music"></i>
+                        </div>
+                        <div class="file-info">
+                            <div class="file-name">Freestyle beat</div>
+                            <div class="file-details">MP3 file</div>
+                        </div>
+                        <div class="file-size">21 MB</div>
+                        <div class="file-actions">
+                            <button class="action-btn">
+                                <i class="fas fa-share-alt"></i>
+                            </button>
+                            <button class="action-btn">
+                                <i class="fas fa-ellipsis-h"></i>
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <div class="recent-file-item">
+                        <div class="file-icon doc-file">
+                            <i class="fas fa-file-alt"></i>
+                        </div>
+                        <div class="file-info">
+                            <div class="file-name">Work proposal</div>
+                            <div class="file-details">DOCx file</div>
+                        </div>
+                        <div class="file-size">600 kb</div>
+                        <div class="file-actions">
+                            <button class="action-btn">
+                                <i class="fas fa-share-alt"></i>
+                            </button>
+                            <button class="action-btn">
+                                <i class="fas fa-ellipsis-h"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Right Sidebar -->
+        <div class="right-sidebar">
+            <button class="add-files-btn">
+                <i class="fas fa-plus me-2"></i>
+                Add new files
+            </button>
+            
+            <div class="storage-info">
+                <div class="storage-title">Your storage</div>
+                <div class="storage-used">75 GB of 100 GB are used</div>
+                <div class="storage-bar">
+                    <div class="storage-progress"></div>
+                </div>
+                <div class="storage-remaining">25% left</div>
+            </div>
+            
+            <div class="shared-folders">
+                <h6 class="mb-3" style="font-weight: 600; color: #333;">Your shared folders</h6>
+                
+                <div class="shared-folder-item keynote-bg">
+                    <div class="shared-folder-name">Keynote files</div>
+                    <div class="shared-avatars">
+                        <div class="shared-avatar" style="background: #ff6b6b;">A</div>
+                        <div class="shared-avatar" style="background: #4ecdc4;">B</div>
+                    </div>
+                </div>
+                
+                <div class="shared-folder-item vacation-bg">
+                    <div class="shared-folder-name">Vacation photos</div>
+                    <div class="shared-avatars">
+                        <div class="shared-avatar" style="background: #45b7d1;">C</div>
+                    </div>
+                </div>
+                
+                <div class="shared-folder-item project-bg">
+                    <div class="shared-folder-name">Project report</div>
+                    <div class="shared-avatars">
+                        <div class="shared-avatar" style="background: #96ceb4;">D</div>
+                        <div class="shared-avatar" style="background: #feca57;">E</div>
+                    </div>
+                </div>
+                
+                <div class="text-center mt-3">
+                    <a href="#" style="color: #666; font-size: 14px; text-decoration: none;">+ Add more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
